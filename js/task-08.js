@@ -13,10 +13,10 @@ if(formElements.email.value === "" || formElements.password.value === ""){
 
 } else {
 
-    const Email = formElements.elements.email.value;
-    const Password = formElements.elements.password.value;
+    const email = formElements.elements.email.value;
+    const password = formElements.elements.password.value;
     
-    const formData = {Email, Password}
+    const formData = {email, password}
     formElements.reset();    
     
     console.log(formData)

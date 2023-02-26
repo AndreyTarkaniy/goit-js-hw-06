@@ -8,14 +8,16 @@ const ingredients = [
   ];
 
   const ingredientsEl = document.querySelector("#ingredients");
-
+  
   ingredients.forEach(element => {
+    const linkArreyEl = [];
     const linkEl = document.createElement("li");
     linkEl.textContent = `${element}`;
     linkEl.classList.add("item");   
 
-    ingredientsEl.appendChild(linkEl)   
+    linkArreyEl.push(linkEl)
     
-    console.log(linkEl)
+    ingredientsEl.append(...linkArreyEl)   
+    console.log(linkArreyEl)
   })
-    
+  
